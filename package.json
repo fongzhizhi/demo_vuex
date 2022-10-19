@@ -1,0 +1,44 @@
+{
+  "name": "webapp-quick-start",
+  "version": "1.0.0",
+  "description": "快速启用一个相对完整的webapp，切换不同分支以选择不同的开发环境。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write",
+    "build": "vite build",
+    "server": "node app.router.js",
+    "vite": "vite --open",
+    "dev": "npm-run-all -p server vite"
+  },
+  "lint-staged": {
+    "src/**/**.(ts|less)": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fongzhizhi/webapp-quick-start.git"
+  },
+  "keywords": [],
+  "author": "https://github.com/fongzhizhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fongzhizhi/webapp-quick-start/issues"
+  },
+  "homepage": "https://github.com/fongzhizhi/webapp-quick-start#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/marked": "^4.0.1",
+    "axios": "^0.21.4",
+    "express": "^4.17.2",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "lint-staged": "^12.4.1",
+    "marked": "^4.0.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "typescript": "^4.5.2",
+    "vite": "^2.7.7"
+  }
+}
